@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        linear-gradient(120deg, rgb(145, 81, 145) 60%, transparent 100%),
+        #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh, 100% 100%;
+    background-position: top left, top left;
+    clip-path: none;
+    border-bottom-right-radius: 200px 170px;
+    box-shadow: 0 8px 32px 0 rgba(138, 43, 226, 0.2);
+    overflow-x: hidden;
+}
+
+.logo {
+    font-family: my-font;
+}
+
+@font-face {
+    font-family: my-font;
+    src: url(/webfonts/Monoton-Regular.ttf);
+}

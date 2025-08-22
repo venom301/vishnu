@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 50px;
+    background:
+        linear-gradient(120deg, rgb(145, 81, 145) 60%, transparent 100%),
+        #fff;
+    background-repeat: no-repeat;
+    background-size: 100% , 100% 100%;
+    background-position: top left, top left;
+    clip-path: none;
+    box-shadow: 0 8px 32px 0 rgba(138, 43, 226, 0.2);
+    overflow-x: hidden;
+}
+
+.container {
+    margin-left: 15%;
+}
+
+.logo {
+    font-family: my-font;
+}
+
+@font-face {
+    font-family: my-font;
+    src: url(/webfonts/Monoton-Regular.ttf);
+}
+
+.set-1,.set-3 {
+    animation: slidefromleft 1.5s;
+}
+
+.set-2,.set-4 {
+    animation: slidefromright 1.5s;
+}
+
+@keyframes slidefromleft {
+     from {
+        margin-right: auto;
+        opacity: 0;
+        transform: translatex(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes slidefromright {
+     from {
+        opacity: 0;
+        transform: translatex(20px);
+    }
+    to {
+        margin-right: auto;
+        opacity: 1;
+        transform: translatex(-10px);
+    }
+}

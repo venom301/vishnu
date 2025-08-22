@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 232, 232);
+}
+
+.navbar-nav li a {
+    color: black;
+    transition: 0.2s ease-in;
+}
+
+.navbar-nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.sect-1 {
+    height: 70vh;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeftToRight 1.5s ease-out forwards;
+    font-family: my-font;
+}
+
+@font-face {
+    font-family: my-font;
+    font-weight: 600;
+    src: url("/webfonts/Borel-Regular.ttf");
+}
+
+.about {
+    text-transform: capitalize;
+}
+
+.sect-2 {
+    background-color: black;
+    color: white;
+}
+
+/* .sect-2::after {
+    content: '';
+    width: 2px;
+    height: 114px;
+    background-color: white;
+    position: absolute;
+    left: 27%;
+    bottom: 10px;
+    top: 525px;
+} */
+
+.v {
+    width: 30px;
+}
+
+@keyframes fadeInLeftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

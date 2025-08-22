@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: 
+    linear-gradient(90deg, whitesmoke, transparent);
+}
+
+.header {
+    min-height: 60vh;
+    background:
+        linear-gradient(120deg, rgb(145, 81, 145) 60%, transparent 100%),
+        #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 60vh, 100% 100%;
+    background-position: top left, top left;
+    clip-path: none;
+    border-bottom-right-radius: 200px 170px;
+    box-shadow: 0 8px 32px 0 rgba(138, 43, 226, 0.2);
+    overflow-x: hidden;
+    animation: slide  1.7s ease-in-out forwards;
+}
+
+.logo {
+    font-family: my-font;
+}
+
+.navbar ul li a {
+    transition: 0.7s ease-in;
+}
+
+.navbar ul li a:hover {
+    text-decoration: 3px solid line-through black;
+}
+
+.head {
+    font-family: my-font-two;
+}
+
+#tail {
+    font-family: my-font-three;
+}
+
+#my-link {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+#my-link:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.v {
+    width: 30px;
+}
+
+@font-face {
+    font-family: my-font;
+    src: url(/webfonts/Monoton-Regular.ttf);
+}
+
+@font-face {
+    font-family: my-font-two;
+    src: url(/webfonts/SpicyRice-Regular.ttf);
+}
+
+@font-face {
+    font-family: my-font-three;
+    src: url(/webfonts/Borel-Regular.ttf);
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translatex(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
